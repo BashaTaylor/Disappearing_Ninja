@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Disappearing Ninja</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="home">
+            <h4>jQuery - assignment 1</h4>
+            <div id="wrapper">
+                <div id="top">
+                    <img id="ninja1" class="ninjas" src="./ninja1.jpg" alt="ninja1Img">
+                    <img id="ninja2" class="ninjas" src="./ninja1.jpg" alt="ninja1Img">
+                    <img id="ninja3" class="ninjas" src="./ninja1.jpg" alt="ninja1Img">
+                    <img id="ninja4" class="ninjas" src="./ninja1.jpg" alt="ninja1Img">
+
+                </div>
+                <div id="bottom">
+                    <img id="ninja5" class="ninjas" src="./ninja1.jpg" alt="ninja2Img">
+                    <img id="ninja6" class="ninjas" src="./ninja1.jpg" alt="ninja2Img">
+                    <img id="ninja7" class="ninjas" src="./ninja1.jpg" alt="ninja2Img">
+                    <img id="ninja8" class="ninjas" src="./ninja1.jpg" alt="ninja2Img">
+                </div>
+
+            </div>
+            <button id="restoreBtn">Restore</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#ninja1').click(function () {
+                $('#ninja1').hide();
+            });
+        });
+
+        $('#ninja2').click(function () {
+            $('#ninja2').hide();
+        });
+        $('#ninja3').click(function () {
+            $('#ninja3').hide();
+        });
+        $('#ninja4').click(function () {
+            $('#ninja4').hide();
+        });
+        $('#ninja5').click(function () {
+            $('#ninja5').hide();
+        });
+        $('#ninja6').click(function () {
+            $('#ninja6').hide();
+        });
+        $('#ninja7').click(function () {
+            $('#ninja7').hide();
+        });
+        $('#ninja8').click(function () {
+            $('#ninja8').hide();
+        });
+
+        $('#restoreBtn').click(function () {
+            $('.ninjas').fadeIn();
+        });
+
+    </script>
+</body>
+
+</html>
